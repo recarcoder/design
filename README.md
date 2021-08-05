@@ -1,1 +1,1 @@
-Templates for different kinds of professoins
+Templates for different kinds of professions
