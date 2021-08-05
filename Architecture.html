@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Surya: the Art</title>
+</head>
+<body>
+  <div class="top">
+    <svg width="50" height="44" class="svg" viewBox="0 0 504 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="62" y="314" width="142" height="132" rx="2" fill="rgba(30,74,239,0.9)" />
+      <rect x="62" y="194" width="381" height="120" fill="rgba(30,74,239,0.9)" />
+      <rect x="286" y="314" width="157" height="132" rx="2" fill="rgba(30,74,239,0.9)" />
+      <path d="M250.778 0.943677C251.498 0.387761 252.502 0.387768 253.222 0.943685L502.837 193.667C504.347 194.833 503.522 197.25 501.614 197.25H2.38555C0.477654 197.25 -0.346882 194.833 1.16328 193.667L250.778 0.943677Z" fill="rgba(30,74,239,0.9)" fill-opacity="0.92" />
+    </svg>
+    <h1><b>O </b>hello<strong>|</strong></h1>
+  </div>
+  <div class="body">
+    <h1 class="about">About me</h1>
+    <h2 class="me">I am a professoinal Architect. I designed many architectual wonders</h2>
+    <h2>my designs include</h2>
+    <ul>
+      <li>Wjjeje</li>
+      <li>Jekosisem</li>
+      <li>Kekekekokke</li>
+      <li>Jskekkeoekdidi</li>
+    </ul>
+    <hr>
+    <h1 class="chos">Choose the perfect for you</h1>
+    <h2>Some design examples</h2>
+    <div class="flex">
+      <img src="https://source.unsplash.com/wtf62YOMqZo" class="hom" alt="img">
+      <img src="https://source.unsplash.com/6jcTJm2LdZI" class="hom" alt="" />
+    </div>
+    <h3 class="mor" onclick="close()">More</h3>
+    <hr>
+    <h1 class="cont">Contact me</h1>
+    <h2>for special Design</h2>
+    <label for="email">Email:</label>
+    <input type="text" placeholder="email" name="email">
+    <input class="sub" type="submit" name="email" value="Submit">
+  </div>
+  <style>
+    body {
+      background-color: rgba(240,240,240,0.7);
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+@keyframes cap {
+      0% {
+        filter: opacity(0);
+      }
+      100% {
+        filter: opacity(1);
+      }
+    }
+    .mor {
+      display: block;
+      color: rgba(160,10,213,0.8);
+      font-size: 0.9rem;
+    }
+    * {
+      font-family: 'Roboto',sans-serif;
+      letter-spacing: 0.5px;
+      transition: 1s;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    h3 {
+      width: 100vw;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid rgba(129,139,141,0.5);
+    }
+    label {
+      padding: 5px;
+      font-size: 20px;
+      margin: 5px;
+    }
+    input[type=submit] {
+      margin: 5px;
+      height: 30px;
+      padding: 5px;
+      border: 2px solid grey;
+      border-radius: 2px;
+    }
+    input[type=submit]:hover {
+      background-color: rgba(36,178,9,0.8);
+    }
+    input[type=text] {
+      margin: 5px;
+      padding: 5px;
+      height: 30px;
+      outline: none;
+      rgba(26,27,27,0.8)
+      background-color: rgba(226,227,227,0.3);
+      border: 2px solid grey;
+      border-radius: 2px;
+    }
+    .me {
+      color:;
+    }
+    .about {
+      color: rgba(227,8,238,0.8);
+    }
+    .sub {
+      height: 25px;
+
+    }
+    .cont {
+      color: rgba(24,195,225,0.8);
+    }
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-grow: 1.2;
+      flex-shrink: 0.8;
+    }
+    h3 {
+      text-align: center;
+      width: 100%;
+    }
+    h3>a {
+      text-decoration: none;
+    }
+    .svg {
+      height: 40px;
+      width: 40px;
+      margin-top: 15px;
+      margin-left: 15px;
+      animation: blink3s infinite;
+    }
+@keyframes blink {
+      0% {
+        filter: opacity(1);
+      }
+      50% {
+        filter: opacity(0.5);
+      }
+      100% {
+        filter: opacity(0.9);
+      }
+    }
+    .body {
+      width: 96%;
+      margin: auto;
+      margin-top: 120px;
+      animation: cap1s;
+    }
+@keyframes cap {
+      0% {
+        filter: opacity(0);
+      }
+      100% {
+        filter: opacity(1);
+      }
+    }
+    .top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      background-color: rgba(240,240,240,0.3);
+      border-bottom: 1px solid rgba(200,200,200,0.4);
+      backdrop-filter: blur(3px);
+    }
+    .top>h1 {
+      position: fixed;
+      top: 15px;
+      left: 50%;
+      transform: translate(-50%,0);
+      display: inline-block;
+      margin: 0 auto;
+      font-size: 30px;
+      color: rgba(30,110,250,0.6);
+      font-family: 'Ubuntu', sans-serif;
+      letter-spacing: 1px;
+    }
+    h1>b {
+      font-size: 35px;
+      color: rgba(20,100,240,0.8);
+      font-family: 'Ubuntu', sans-serif;
+    }
+@media only screen and (max-width:450px) {
+      h1 {
+        font-size: 1.4rem;
+        color: rgba(246,20,20,0.8);
+      }
+      h2 {
+        margin: 10px;
+        font-size: 1rem;
+        color: rgba(22,21,21,0.6);
+      }
+      .hom {
+        width: 60vw;
+        height: 60vw;
+        margin: 10px;
+        border: 0;
+        border-radius: 5px;
+        background-color: rgba(141,144,145,0.1);
+        box-shadow: 0 0 2px rgba(141,144,145,0.4);
+      }
+      li {
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: rgba(98,93,93,0.8);
+        margin: 5px;
+        margin-left: 20px;
+      }
+      .hom:hover {
+        width: 70vw;
+        height: 70vw;
+        box-shadow: 0 0 4px rgba(141,144,145,0.4);
+      }
+    }
+@media only screen and (min-width:451px) {
+      h1 {
+        font-size: 1.5rem;
+        color: rgba(246,20,20,0.8);
+      }
+      h2 {
+        margin: 10px;
+        font-size: 1.2rem;
+        color: rgba(22,21,21,0.6);
+      }
+      li {
+        font-size: 1rem;
+        font-weight: bold;
+        color: rgba(90,90,90,0.8);
+        margin: 5px;
+        margin-left: 20px;
+      }
+      .hom {
+        width: 40vw;
+        height: 40vw;
+        margin: 10px;
+        border: 0;
+        background-color: rgba(141,144,145,0.1);
+        box-shadow: 0 0 2px rgba(141,144,145,0.4);
+      }
+      .hom:hover {
+        width: 42vw;
+        height: 42vw;
+        box-shadow: 0 0 4px rgba(141,144,145,0.4);
+      }
+    }
+  </style>
+</body>
+</html>
