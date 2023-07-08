@@ -5,4 +5,4 @@ portfolio demo<br/>
 <br>
 <b>Architect</b>
 
-*not f
+*not for vamsi
